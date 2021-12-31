@@ -97,3 +97,32 @@ a.btn--primary {
 a.btn--outline {
   padding: 0.9rem 3rem 1.1rem 3rem;
 }
+
+/*Grids*/
+
+.grid {
+  display: grid;
+}
+
+.grid--1x2 {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.grid--1x3 {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+/*Media Queries*/
+
+.media {
+  display: flex;
+  text-align: left;
+  margin-top: 4rem;
+}
+
+.icon {
+  color: var(--color-primary);
+  display: inline-block;
+  margin-right: 3rem;
+  margin-top: 0.5rem;
+}
