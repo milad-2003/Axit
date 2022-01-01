@@ -110,6 +110,7 @@ a.btn--outline {
 
 .grid--1x3 {
   grid-template-columns: repeat(3, 1fr);
+  grid-gap: 3rem;
 }
 
 /*Media Queries*/
@@ -120,9 +121,31 @@ a.btn--outline {
   margin-top: 4rem;
 }
 
-.icon {
+.media__icon {
   color: var(--color-primary);
   display: inline-block;
   margin-right: 3rem;
   margin-top: 0.5rem;
+}
+
+/*Benefits*/
+
+.icon--container {
+  border: 2px solid var(--color-primary);
+  display: inline-block;
+  border-radius: 100%;
+  padding: 8px;
+  color: var(--color-primary);
+}
+
+.lightbulb__icon {
+  margin: 2px 6.375px;
+}
+
+.keyboard__icon {
+  margin: 2px 0.25px;
+}
+
+.lightning__icon {
+  margin: 2px 6.5px 2px 8px;
 }
