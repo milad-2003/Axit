@@ -63,7 +63,7 @@ h3 {
   color: var(--color-headings);
   font-size: 1.8rem;
   font-weight: 600;
-  margin-bottom: 1.5rem;
+  margin-bottom: 0.8rem;
 }
 
 @media screen and (min-width: 1024px) {
@@ -122,4 +122,28 @@ h3 {
 
 .input::placeholder {
   color: var(--color-inputs);
+}
+
+/*Media*/
+
+.media {
+  margin-top: 4rem;
+  display: flex;
+}
+
+.media__icon {
+  color: var(--color-primary);
+  border: 3px solid var(--color-primary);
+  border-radius: 100%;
+  display: inline-block;
+  padding: 0.8rem 1rem;
+  margin-top: 1rem;
+  margin-right: 2rem;
+  align-self: flex-start;
+}
+
+@media screen and (min-width: 1024px) {
+  .media__icon {
+    margin-right: 3rem;
+  }
 }
