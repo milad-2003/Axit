@@ -6,6 +6,7 @@
   --color-body: #86878b;
   --color-body-bg-secondary: #f5f5f5;
   --color-headings: #212121;
+  --color-inputs: #d6d6d6;
 }
 
 *,
@@ -107,4 +108,18 @@ h3 {
   .btn {
     font-size: 1.5rem;
   }
+}
+
+/*Inputs*/
+
+.input {
+  border: 0;
+  border-bottom: 1px solid var(--color-inputs);
+  padding: 1rem 1.5rem;
+  display: block;
+  outline: 0;
+}
+
+.input::placeholder {
+  color: var(--color-inputs);
 }
