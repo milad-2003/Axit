@@ -165,3 +165,43 @@ h3 {
     grid-template-columns: repeat(3, 1fr);
   }
 }
+
+/*Features*/
+
+.features {
+  grid-gap: 6rem 4rem;
+}
+
+.feature {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.feature__icon {
+  width: 32px;
+  height: 32px;
+}
+
+.feature__icon-container {
+  color: var(--color-primary);
+  border: 3px solid var(--color-primary);
+  border-radius: 100%;
+  display: inline-block;
+  padding: 1.1rem 1.7rem;
+  font-size: 2.8rem;
+  margin-bottom: 2rem;
+}
+
+.feature__heading {
+  font-size: 2.3rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
+
+@media screen and (min-width: 1024px) {
+  .feature__heading {
+    font-size: 2rem;
+  }
+}
