@@ -8,6 +8,12 @@
   --color-headings: #212121;
 }
 
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 html {
   font-size: 62.5%;
 }
@@ -19,7 +25,7 @@ body {
   font-family: "Open Sans", sans-serif;
   font-size: 1.8rem;
   font-weight: 400;
-  line-height: 1.8;
+  line-height: 1.5;
   margin: 0;
   padding: 0;
 }
@@ -42,7 +48,6 @@ h1 {
 
 h2 {
   color: var(--color-headings);
-  font-family: "Open Sans", sans-serif;
   font-size: 2.5rem;
   font-weight: 700;
   margin-bottom: 2rem;
@@ -55,7 +60,6 @@ h2 {
 
 h3 {
   color: var(--color-headings);
-  font-family: "Open Sans", sans-serif;
   font-size: 1.8rem;
   font-weight: 600;
   margin-bottom: 1.5rem;
@@ -73,5 +77,34 @@ h3 {
 
   h2 {
     font-size: 2rem;
+  }
+}
+
+/*Buttons*/
+
+.btn {
+  font-size: 1.9rem;
+  font-weight: 600;
+  border: 0;
+  outline: 0;
+}
+
+.btn--primary {
+  background: var(--color-primary);
+  color: #fff;
+  padding: 1rem 2rem;
+  border-radius: 6px;
+}
+
+.btn--outline {
+  background: transparent;
+  border: 2px solid #fff;
+  color: #fff;
+  padding: 0.8rem 2rem;
+}
+
+@media screen and (min-width: 1024px) {
+  .btn {
+    font-size: 1.5rem;
   }
 }
