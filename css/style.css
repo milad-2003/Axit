@@ -218,6 +218,13 @@ h3 {
   width: min(90vw, 500px);
   min-width: 320px;
   margin: auto;
+  transition: transform 0.2s;
+  overflow: hidden;
+}
+
+.plan:hover,
+.plan:focus {
+  transform: scale(1.05);
 }
 
 .plan__header {
