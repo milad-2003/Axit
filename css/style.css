@@ -407,3 +407,40 @@ h3 {
     justify-self: end;
   }
 }
+
+/*Footer*/
+
+.footer {
+  background: #000;
+  text-align: center;
+}
+
+.footer__link {
+  font-size: 2.4rem;
+  color: #ccc;
+  opacity: 0.75;
+  padding: 1.2rem;
+  transition: color 0.3s, opacity 0.3s;
+}
+
+.footer__link:hover,
+.footer__link:focus {
+  color: #fff;
+  opacity: 1;
+}
+
+.footer__text {
+  color: #fff;
+  opacity: 0.5;
+  font-size: 1.5rem;
+}
+
+@media screen and (min-width: 1024px) {
+  .footer__link {
+    font-size: 2rem;
+  }
+
+  .footer__text {
+    font-size: 1.2rem;
+  }
+}
