@@ -295,3 +295,53 @@ h3 {
     font-size: 2rem;
   }
 }
+
+/*Qoutes*/
+
+.quotes {
+  grid-gap: 10rem;
+}
+
+.quote {
+  max-width: 500px;
+  margin: auto;
+}
+
+.quote__content {
+  background: var(--color-body-bg-secondary);
+  padding: 2rem 1rem;
+  clip-path: polygon(
+    0% 0%,
+    100% 0%,
+    100% 85%,
+    25% 85%,
+    15% 100%,
+    15% 85%,
+    0 85%
+  );
+}
+
+.quote__author {
+  display: flex;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.author__specs {
+  margin-left: 1.5rem;
+}
+
+.author__name {
+  font-size: 2.3rem;
+  font-weight: 700;
+}
+
+.author__job {
+  margin-bottom: 0;
+}
+
+@media screen and (min-width: 1024px) {
+  .author__name {
+    font-size: 2rem;
+  }
+}
