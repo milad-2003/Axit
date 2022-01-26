@@ -205,3 +205,86 @@ h3 {
     font-size: 2rem;
   }
 }
+
+/*Plans*/
+
+.plans {
+  align-items: end;
+  text-align: center;
+  grid-gap: 2rem 4rem;
+}
+
+.plan {
+  width: min(90vw, 500px);
+  min-width: 320px;
+  margin: auto;
+}
+
+.plan__header {
+  background: var(--color-secondary);
+  border-bottom: 5px solid var(--color-primary);
+}
+
+.plan__name {
+  color: #fff;
+  border-bottom: 1px solid #fff;
+  font-size: 2.3rem;
+  font-weight: 700;
+  padding: 1.5rem;
+  margin-bottom: 0;
+}
+
+.plan__price {
+  color: #fff;
+  font-family: "Raleway", sans-serif;
+  font-size: 8rem;
+  font-weight: 700;
+}
+
+.dollar-sign {
+  font-size: 3rem;
+}
+
+.plan__description {
+  color: #fff;
+  opacity: 0.5;
+  font-style: italic;
+  display: block;
+  margin-bottom: 2rem;
+}
+
+.plan--popular .plan__header {
+  border: 0;
+}
+
+.plan--popular .plan__header::after {
+  content: "our most popular";
+  background: var(--color-primary);
+  color: #fff;
+  text-transform: uppercase;
+  display: block;
+  font-weight: 700;
+  padding: 1rem;
+}
+
+.plan__body {
+  background: #fff;
+}
+
+.list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.list__item {
+  text-transform: uppercase;
+  border-bottom: 1px solid var(--color-body-bg-secondary);
+  padding: 1rem;
+}
+
+@media screen and (min-width: 1024px) {
+  .plan__name {
+    font-size: 2rem;
+  }
+}
