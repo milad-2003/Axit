@@ -45,7 +45,7 @@ p {
 h1 {
   color: #fff;
   font-family: "Raleway", sans-serif;
-  font-size: 3rem;
+  font-size: 3.5rem;
   font-weight: 500;
   margin-bottom: 3rem;
   line-height: 1.4;
@@ -77,7 +77,7 @@ h3 {
   }
 
   h1 {
-    font-size: 2.8rem;
+    font-size: 3.1rem;
   }
 
   h2 {
@@ -563,8 +563,9 @@ h3 {
 
 .signup-card {
   border-radius: 5px;
-  box-shadow: 0 0 20px #666;
   overflow: hidden;
+  max-width: 360px;
+  margin: auto;
 }
 
 .signup-card__header {
@@ -577,7 +578,7 @@ h3 {
   font-weight: 700;
   color: #333;
   margin-bottom: 0;
-  padding: 2rem 5rem;
+  padding: 2rem 3rem;
 }
 
 .free-word {
@@ -590,6 +591,25 @@ h3 {
   padding: 3rem 4rem;
 }
 
+@media screen and (min-width: 768px) {
+  .signup-card__heading {
+    font-size: 1.6rem;
+  }
+
+  .submit--btn {
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (min-width: 864px) {
+  .signup-card__heading {
+    font-size: 2rem;
+  }
+
+  .submit--btn {
+    font-size: inherit;
+  }
+}
 /*Contact Form*/
 
 .contact__form {
@@ -608,8 +628,12 @@ h3 {
 
 /*Navigation Bar*/
 
-.nav-bar {
+nav {
   background: #000;
+  padding: 0 2rem;
+}
+
+.nav-bar {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -680,5 +704,59 @@ h3 {
 
   .nav__link > a {
     border: none;
+  }
+}
+
+/*Blocks*/
+
+.block {
+  padding: 5rem 2rem;
+}
+
+.block__header {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+/*Hero Block*/
+
+.hero {
+  background-image: url(/images/image.webp);
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-color: var(--color-body-bg-secondary);
+}
+
+.hero__grid {
+  grid-gap: 2rem 20rem;
+}
+
+.hero__info {
+  max-width: 500px;
+  margin: auto;
+}
+
+.hero__logo {
+  width: 150px;
+  display: block;
+  margin-bottom: 2rem;
+}
+
+.white-line {
+  width: 74px;
+  display: block;
+  margin-bottom: 2rem;
+}
+
+@media screen and (min-width: 768px) {
+  .hero {
+    background-position: center;
+    background-attachment: cover;
   }
 }
