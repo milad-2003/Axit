@@ -242,15 +242,15 @@ h3 {
 
 .plans {
   align-items: end;
-  text-align: center;
+  justify-items: center;
   grid-gap: 2rem 4rem;
 }
 
 .plan {
-  width: min(90vw, 500px);
-  min-width: 320px;
-  margin: auto;
+  width: 100%;
+  max-width: 350px;
   transition: transform 0.2s;
+  text-align: center;
   overflow: hidden;
 }
 
