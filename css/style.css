@@ -60,7 +60,9 @@ h2 {
 
 .raleway--h2 {
   font-family: "Raleway", sans-serif;
-  font-weight: 500;
+  font-weight: 400;
+  font-size: 3.5rem;
+  text-transform: uppercase;
 }
 
 h3 {
@@ -82,6 +84,10 @@ h3 {
 
   h2 {
     font-size: 2rem;
+  }
+
+  .raleway--h2 {
+    font-size: 3rem;
   }
 }
 
@@ -733,7 +739,11 @@ nav {
 
 .block__header {
   text-align: center;
-  margin-bottom: 4rem;
+  margin-bottom: 10rem;
+}
+
+.header__text {
+  margin-top: 2rem;
 }
 
 .container {
