@@ -711,6 +711,7 @@ nav {
   max-height: 0;
   opacity: 0;
   transition: all 0.4s;
+  overflow: hidden;
 }
 
 .collapsible--expanded {
@@ -734,7 +735,7 @@ nav {
 }
 
 .nav__link:last-of-type > a {
-  border-bottom: 1px solid #000;
+  border-bottom: 0;
 }
 
 .nav__link > a:hover,
