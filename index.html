@@ -11,8 +11,355 @@
     <script src="https://kit.fontawesome.com/61eec5e448.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
-    
-   <script src="js/main.js"></script>
+<body onload="document.getElementById('loading-box').style.display=
+'none';document.getElementById('body__content').style.display=
+'block';">
+    <div id="loading-box">
+        loading...
+    </div>
+    <div id="body__content">
+        <header>
+            <nav>
+                <div class="nav-bar container">
+                    <a href="/"><img src="images/Logo.png" alt="Logo of AXIT" class="logo"></a>
+                    <div class="menu-icon collapsible">
+                     <i class="fas fa-bars"></i>
+                    </div>
+                    <ul class="collapsible__content list">
+                        <li class="nav__link"><a href="#features">Features</a></li>
+                        <li class="nav__link"><a href="#about">About</a></li>
+                        <li class="nav__link"><a href="#pricing">Pricing</a></li>
+                        <li class="nav__link"><a href="#reviews">Reviews</a></li>
+                        <li class="nav__link"><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <section class="block hero">
+                <div class="container grid grid--1x2 hero__grid">
+                    <div class="hero__info">
+                        <img src="images/Logo.png" alt="Logo of AXIT" class="hero__logo">
+                        <h1>Modern Axure Template for Beautiful Prototypes</h1>
+                        <img src="images/divider_white_u72.png" alt="" class="white-line">
+                        <p class="benefit__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut tempore officia voluptatem in, sunt sint impedit mollitia est, quod necessitatibus, rerum sequi possimus.</p>
+                        <a href="#" class="btn btn--outline dl-button">Download</a>
+                    </div>
+                    <div class="signup-card">
+                        <header class="signup-card__header">
+                            <h2 class="signup-card__heading">Try Your <span class="free-word">free</span> Trial Today</h2>
+                        </header>
+                        <div class="signup-card__body">
+                            <form id="sign-up-form" action="#">
+                                <input type="text" name="name" placeholder="Name" class="input" required>
+                                <input type="email" name="email" placeholder="Email" class="input" required>
+                                <input type="password" name="password" placeholder="Password" class="input" required>
+                            </form>
+                        </div>
+                            <button type="submit" form="sign-up-form" class="btn btn--primary submit--btn">Get Started</button>
+                    </div>
+                </div>
+            </section>
+            <section class="media-links">
+                <div class="container media-links__container grid grid--1x2">
+                    <div class="media-links__explanation">
+                        <h2>Social Media</h2>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorem amet error ipsum repellat nulla quas.</p>
+                    </div>
+                    <div class="media-links__icons">
+                        <a href="#" class="media-link" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="media-link" title="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="media-link" title="Google+"><i class="fab fa-google-plus-g"></i></a>
+                        <a href="#" class="media-link" title="Pinterest"><i class="fab fa-pinterest"></i></a>
+                        <a href="#" class="media-link" title="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="media-link" title="Youtube"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </section>
+        </header>
+        <main>
+            <section id="about" class="block tabs-block">
+                <div class="container grid grid--1x3 tabs__container">
+                    <div class="tab__buttons">
+                        <button id="tab1__button" onclick="document.getElementById('tab1__content').style.display=
+                        'block';document.getElementById('tab2__content').style.display=
+                        'none';document.getElementById('tab3__content').style.display=
+                        'none';document.getElementById('tab1__button').style.background=
+                        'var(--color-primary)';document.getElementById('tab2__button').style.background=
+                        'var(--color-secondary)';document.getElementById('tab3__button').style.background=
+                        'var(--color-secondary)';" type="button" class="btn tab__button">Android</button>
+                        <button id="tab2__button" onclick="document.getElementById('tab1__content').style.display=
+                        'none';document.getElementById('tab2__content').style.display=
+                        'block';document.getElementById('tab3__content').style.display=
+                        'none';document.getElementById('tab1__button').style.background=
+                        'var(--color-secondary)';document.getElementById('tab2__button').style.background=
+                        'var(--color-primary)';document.getElementById('tab3__button').style.background=
+                        'var(--color-secondary)';" type="button" class="btn tab__button">Windows</button>
+                        <button id="tab3__button" onclick="document.getElementById('tab1__content').style.display=
+                        'none';document.getElementById('tab2__content').style.display=
+                        'none';document.getElementById('tab3__content').style.display=
+                        'block';document.getElementById('tab1__button').style.background=
+                        'var(--color-secondary)';document.getElementById('tab2__button').style.background=
+                        'var(--color-secondary)';document.getElementById('tab3__button').style.background=
+                        'var(--color-primary)';" type="button" class="btn tab__button">Mac OS</button>
+                    </div>
+                    <div class="tabs__content">
+                        <div id="tab1__content">
+                            <h2>Tabs with soft transitioning effect.</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores distinctio sapiente quae impedit! Quae, voluptas. Est eos temporibus quisquam aut saepe suscipit, vitae, accusamus quaerat corrupti iusto fugit quidem recusandae, et porro in expedita facere!</p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus dolor ipsa explicabo.</p>
+                            <a href="#" class="btn btn--primary dl-button">Download</a>
+                        </div>
+                        <div id="tab2__content">
+                            <h2>This is the content of Tab 2.</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, praesentium! Quaerat doloremque libero enim ipsa corrupti dolorem non recusandae sit.</p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, id odit. Commodi aut cumque illum! Vero alias, a maxime doloribus nostrum, non earum voluptatibus iure perspiciatis culpa libero nesciunt asperiores?</p>
+                            <a href="#" class="btn btn--primary dl-button">Download</a>
+                        </div>
+                        <div id="tab3__content">
+                            <h2>Here's the content of the third Tab.</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, assumenda.</p>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Unde praesentium quisquam optio sunt corporis, hic rerum cum non neque quibusdam?</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia, eos quos. Sapiente architecto sit blanditiis.</p>
+                            <a href="#" class="btn btn--primary dl-button">Download</a>
+                        </div>
+                    </div>
+                    <img src="images/image_right_u255.png" alt="" class="tab__image">
+                </div>
+            </section>
+            <section class="block sub-list-block">
+                <div class="container grid grid--1x2 sub-list">
+                    <div class="sub-list__content">
+                        <h2>Sub list section</h2>
+                        <img src="images/divider_orange_u7 copy 4.png" alt="">
+                        <div class="content__text">
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cupiditate repellat id saepe distinctio excepturi! Officiis quibusdam quaerat et eaque veritatis quasi amet distinctio!</p>
+                        </div>
+                        <div class="media">
+                             <div class="media__icon">
+                                 <i class="fas fa-cloud-upload-alt"></i>
+                             </div>
+                             <div class="media__content">
+                                 <h3>Title</h3>
+                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur ratione commodi magnam maiores laboriosam dolor!</p>
+                             </div>
+                         </div>
+                         <div class="media">
+                             <div class="media__icon">
+                                 <i class="fas fa-cloud-download-alt"></i>
+                             </div>
+                             <div class="media__content">
+                                 <h3>Title</h3>
+                                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eius, dolor vitae esse in numquam consequuntur consequatur autem beatae iste? Dolores ex quis amet reiciendis exercitationem!</p>
+                             </div>
+                         </div>
+                    </div>
+                    <picture>
+                        <source type="image/webp" src="images/image_left_sub_list_u260.webp">
+                        <source type="image/png" src="images/image_left_sub_list_u260.png">
+                        <img src="images/image_left_sub_list_u260.png" alt="" class="sub-list__image">
+                    </picture>
+                </div>
+            </section>
+            <section class="block sub-list-block">
+                <div class="container grid grid--1x2 sub-list">
+                    <div class="sub-list__content">
+                        <h2>Standard Picture Section</h2>
+                        <img src="images/divider_orange_u7 copy 4.png" alt="">
+                        <div class="content__text">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi sequi maiores, corporis beatae quae magnam quis doloremque quod hic ut porro velit atque, nostrum excepturi architecto. Iure eveniet totam veritatis ut. Labore, pariatur ratione! Sequi?</p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus nisi nihil accusamus.</p>
+                        </div>
+                    </div>
+                    <picture>
+                        <source type="image/webp" src="images/image_right_standard_u262.webp">
+                        <source type="image/png" src="images/image_right_standard_u262.png">
+                        <img src="images/image_right_standard_u262.png" alt="" class="sub-list__image">
+                    </picture>
+                </div>
+            </section>
+            <section id="features" class="block">
+                <div class="container">
+                    <div class="block__header">
+                        <h2 class="raleway--h2">why this is awesome</h2>
+                        <img src="images/divider_orange_u7 copy 4.png" alt="">
+                        <p class="header__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                    </div>
+                    <div class="features grid grid--1x3">
+                        <div class="feature">
+                            <div class="feature__icon-container">
+                                <i class="far fa-lightbulb feature__icon"></i>
+                            </div>
+                            <h3 class="feature__heading">Thoughtful Design</h3>
+                            <p class="feature__content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse repellendus velit dicta atque maxime sapiente aspernatur modi architecto reiciendis, aliquid nisi eveniet repudiandae est illum!</p>
+                        </div>
+                        <div class="feature">
+                            <div class="feature__icon-container">
+                                <i style="position: relative; top: 1px;" class="far fa-keyboard feature__icon"></i>
+                            </div>
+                            <h3 class="feature__heading">Well Crafted</h3>
+                            <p class="feature__content">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veritatis atque temporibus eligendi dolorum iste nesciunt tempore, saepe, consequatur vitae architecto necessitatibus, esse rerum? Sit, dolor!</p>
+                        </div>
+                        <div class="feature">
+                            <div class="feature__icon-container">
+                                <i style="position: relative; top:2px; left: 1px;" class="fas fa-bolt feature__icon"></i>
+                            </div>
+                            <h3 class="feature__heading">Easy to Customize</h3>
+                            <p class="feature__content">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusantium ratione officiis culpa voluptate nobis rerum, distinctio animi iure explicabo quidem, quod blanditiis reiciendis error consequuntur.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="pricing" class="block">
+                <div class="container">
+                    <div class="block__header">
+                        <h2 class="raleway--h2">pricing options</h2>
+                        <img src="images/divider_orange_u7 copy 4.png" alt="">
+                        <p class="header__text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    </div>
+                    <div class="plans grid grid--1x3">
+                        <div class="plan">
+                            <header class="plan__header">
+                                <h3 class="plan__name">Basic</h3>
+                                <div class="plan__price"><span class="dollar-sign">$</span>0</div>
+                                <span class="plan__description">Free for Life</span>
+                            </header>
+                            <div class="plan__body">
+                                <ul class="list">
+                                    <li class="list__item">1 gb of space</li>
+                                    <li class="list__item">10 gb of bandwidth</li>
+                                    <li class="list__item">3 websites</li>
+                                    <li class="list__item">basic customization</li>
+                                    <li class="list__item">wordpress integration</li>
+                                    <li class="list__item">email support</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="plan plan--popular">
+                            <header class="plan__header">
+                                <h3 class="plan__name">Professional</h3>
+                                <div class="plan__price"><span class="dollar-sign">$</span>19</div>
+                                <span class="plan__description">Monthly Payment</span>
+                            </header>
+                            <div class="plan__body">
+                                <ul class="list">
+                                    <li class="list__item">5 gb of space</li>
+                                    <li class="list__item">50 gb of bandwidth</li>
+                                    <li class="list__item">12 websites</li>
+                                    <li class="list__item">advanced customization</li>
+                                    <li class="list__item">wordpress integration</li>
+                                    <li class="list__item">email support</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="plan">
+                            <header class="plan__header">
+                                <h3 class="plan__name">Enterprise</h3>
+                                <div class="plan__price"><span class="dollar-sign">$</span>70</div>
+                                <span class="plan__description">Monthly Payment</span>
+                            </header>
+                            <div class="plan__body">
+                                <ul class="list">
+                                    <li class="list__item">unlimited space</li>
+                                    <li class="list__item">unlimited bandwidth</li>
+                                    <li class="list__item">100 websites</li>
+                                    <li class="list__item">advanced customization</li>
+                                    <li class="list__item">wordpress integration</li>
+                                    <li class="list__item">24/7 customer support</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="reviews" class="block">
+                <div class="container">
+                    <div class="block__header">
+                        <h2 class="raleway--h2">what our customers are saying</h2>
+                        <img src="images/divider_orange_u7 copy 4.png" alt="">
+                        <p class="header__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                    </div>
+                    <div class="quotes grid grid--1x3">
+                        <div class="quote">
+                            <div class="quote__content">
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odio aperiam nihil, fugiat unde nobis id voluptatem iusto doloremque obcaecati qui!</p>
+                            </div>
+                            <div class="quote__author">
+                                <img src="images/avatar_2_u231.png" alt="profile picture">
+                                <div class="author__specs">
+                                    <h3 class="author__name">Jeremy H.</h3>
+                                    <p class="author__job">Manager</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="quote">
+                            <div class="quote__content">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam eligendi doloribus possimus aliquid delectus unde voluptates ratione porro repellendus perferendis!</p>
+                            </div>
+                            <div class="quote__author">
+                                <img src="images/avatar_2_u231.png" alt="profile picture">
+                                <div class="author__specs">
+                                    <h3 class="author__name">John S.</h3>
+                                    <p class="author__job">Freelancer</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="quote">
+                            <div class="quote__content">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas, voluptatibus. Suscipit modi laudantium nemo deleniti molestiae vitae itaque temporibus nobis!</p>
+                            </div>
+                            <div class="quote__author">
+                                <img src="images/avatar_2_u231.png" alt="profile picture">
+                                <div class="author__specs">
+                                    <h3 class="author__name">Susan W.</h3>
+                                    <p class="author__job">Photographer</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="block benefit">
+                <div class="container">
+                    <div class="benefit__header">
+                        <h2 class="raleway--h2 benefit__heading">stylish axure design</h2>
+                        <img src="images/divider_white_u72.png" alt="">
+                        <p class="benefit__text">Use the sections you need, remove the ones you don't.  Create gorgeous prototypes faster than ever!</p>
+                        <a href="#" class="btn btn--outline">Download</a>
+                    </div>
+                </div>
+            </section>
+            <section id="contact" class="block">
+                <div class="container">
+                    <div class="block__header">
+                        <h2 class="raleway--h2">contact us</h2>
+                        <img src="images/divider_orange_u7 copy 4.png" alt="">
+                        <p class="header__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                    </div>
+                    <form id="contact__form" action="#" class="contact__form grid grid--1x2">
+                        <div>
+                            <input type="text" name="name" placeholder="Name" class="input" maxlength="50" required>
+                            <input type="email" name="email" placeholder="Email" class="input" maxlength="100" required>
+                            <input type="text" name="subject" placeholder="Subject" class="input" maxlength="50">
+                        </div>
+                        <textarea rows="4" name="message" placeholder="Message" class="input textarea" maxlength="1500" required></textarea>
+                    </form>
+                    <button type="submit" form="contact__form" class="btn btn--primary send-message-btn">Send Message</button>
+                </div>
+            </section>
+        </main>
+        <footer class="footer">
+            <div class="footer__links">
+                <a href="#" title="Facebook"><i class="fab fa-facebook-f footer__link"></i></a>
+                <a href="#" title="Twitter"><i class="fab fa-twitter footer__link"></i></a>
+                <a href="#" title="Google+"><i class="fab fa-google-plus-g footer__link"></i></a>
+                <a href="#" title="Pinterest"><i class="fab fa-pinterest footer__link"></i></a>
+                <a href="#" title="Instagram"><i class="fab fa-instagram footer__link"></i></a>
+                <a href="#" title="Youtube"><i class="fab fa-youtube footer__link"></i></a>
+            </div>
+            <p class="footer__text">
+                &copy; 2015 Axure Themes
+            </p>
+        </footer>
+           <script src="js/main.js"></script>
+    </div>
 </body>
 </html>

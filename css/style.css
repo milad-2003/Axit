@@ -19,10 +19,15 @@ a {
   text-decoration: none;
 }
 
+section:nth-of-type(odd) {
+  background-color: var(--color-body-bg-secondary);
+}
+
 /*Typography*/
 
 html {
   font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -120,9 +125,10 @@ h3 {
 .btn--outline {
   background: transparent;
   border: 2px solid #fff;
+  overflow: hidden;
   color: #fff;
   padding: 0.8rem 2rem;
-  transition: all 0.7s;
+  transition: all 0.5s;
 }
 
 .btn--outline:hover,
@@ -385,6 +391,8 @@ h3 {
 /*Media Links*/
 
 .media-links {
+  position: relative;
+  z-index: 1;
   box-shadow: 0px 1px 5px var(--color-body);
   padding: 2rem;
 }
@@ -597,6 +605,7 @@ h3 {
   overflow: hidden;
   max-width: 360px;
   margin: auto;
+  margin-top: 3rem;
 }
 
 .signup-card__header {
@@ -623,6 +632,10 @@ h3 {
 }
 
 @media screen and (min-width: 768px) {
+  .signup-card {
+    margin-top: 0;
+  }
+
   .signup-card__heading {
     font-size: 1.6rem;
   }
@@ -661,6 +674,11 @@ h3 {
 
 nav {
   background: #000;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 2;
   padding: 0 2rem;
 }
 
@@ -712,6 +730,10 @@ nav {
   padding: 1rem 2rem;
 }
 
+.nav__link:last-of-type > a {
+  border-bottom: 1px solid #000;
+}
+
 .nav__link > a:hover,
 .nav__link > a:focus {
   opacity: 1;
@@ -741,7 +763,7 @@ nav {
 /*Blocks*/
 
 .block {
-  padding: 5rem 2rem;
+  padding: 10rem 2rem;
 }
 
 .tabs-block {
@@ -776,6 +798,7 @@ nav {
   background-repeat: no-repeat;
   background-size: 100% 100%;
   background-color: var(--color-body-bg-secondary);
+  margin-top: 7rem;
 }
 
 .hero__grid {
@@ -836,12 +859,12 @@ nav {
     justify-self: end;
   }
 
-  .sub-list-block:nth-of-type(odd) .sub-list .sub-list__content {
+  .sub-list-block:nth-of-type(even) .sub-list .sub-list__content {
     order: 2;
     justify-self: end;
   }
 
-  .sub-list-block:nth-of-type(odd) .sub-list .sub-list__image {
+  .sub-list-block:nth-of-type(even) .sub-list .sub-list__image {
     justify-self: start;
   }
 }
@@ -861,6 +884,7 @@ nav {
 
 .benefit__heading {
   color: #fff;
+  margin-bottom: 1.5rem;
 }
 
 .benefit__text {
@@ -877,4 +901,21 @@ nav {
   .benefit__text {
     font-size: 1.6rem;
   }
+}
+
+/*Loading Box*/
+
+#loading-box {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  color: var(--color-primary);
+  font-size: 8rem;
+  font-weight: 700;
+}
+
+#body__content {
+  display: none;
 }
