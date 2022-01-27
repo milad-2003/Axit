@@ -784,3 +784,31 @@ nav {
     background-attachment: cover;
   }
 }
+
+/*Sub-list Block*/
+
+.sub-list {
+  align-items: center;
+  justify-items: center;
+  grid-gap: 2rem;
+}
+
+.sub-list__content {
+  max-width: 420px;
+}
+
+.sub-list__image {
+  width: 100%;
+  max-width: 420px;
+}
+
+@media screen and (min-width: 768px) {
+  .sub-list__content {
+    justify-self: end;
+    order: 2;
+  }
+
+  .sub-list__image {
+    justify-self: start;
+  }
+}
