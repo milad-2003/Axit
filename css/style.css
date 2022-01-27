@@ -375,8 +375,11 @@ h3 {
 /*Media Links*/
 
 .media-links {
-  align-items: center;
   box-shadow: 0px 1px 5px var(--color-body);
+}
+
+.media-links__container {
+  align-items: center;
 }
 
 .media-links__explanation {
