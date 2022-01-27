@@ -819,7 +819,6 @@ nav {
 @media screen and (min-width: 768px) {
   .hero {
     background-position: center;
-    background-attachment: cover;
   }
 }
 
