@@ -65,6 +65,7 @@ h2 {
   text-transform: uppercase;
   letter-spacing: 1px;
   word-spacing: 2px;
+  margin-bottom: 0;
 }
 
 h3 {
