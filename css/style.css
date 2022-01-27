@@ -258,14 +258,8 @@ h3 {
 .plan {
   width: 100%;
   max-width: 350px;
-  transition: transform 0.2s;
   text-align: center;
   overflow: hidden;
-}
-
-.plan:hover,
-.plan:focus {
-  transform: scale(1.05);
 }
 
 .plan__header {

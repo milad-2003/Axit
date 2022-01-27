@@ -10,6 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400&family=Raleway:wght@300;400&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/61eec5e448.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body onload="document.getElementById('loading-box').style.display=
 'none';document.getElementById('body__content').style.display=
@@ -43,7 +44,7 @@
                         <p class="benefit__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut tempore officia voluptatem in, sunt sint impedit mollitia est, quod necessitatibus, rerum sequi possimus.</p>
                         <a href="#" class="btn btn--outline dl-button">Download</a>
                     </div>
-                    <div class="signup-card">
+                    <div data-aos="zoom-in" data-aos-duration="1000" class="signup-card">
                         <header class="signup-card__header">
                             <h2 class="signup-card__heading">Try Your <span class="free-word">free</span> Trial Today</h2>
                         </header>
@@ -78,7 +79,7 @@
         <main>
             <section id="about" class="block tabs-block">
                 <div class="container grid grid--1x3 tabs__container">
-                    <div class="tab__buttons">
+                    <div data-aos="fade-right" data-aos-duration="1000" class="tab__buttons">
                         <button id="tab1__button" onclick="document.getElementById('tab1__content').style.display=
                         'block';document.getElementById('tab2__content').style.display=
                         'none';document.getElementById('tab3__content').style.display=
@@ -101,7 +102,7 @@
                         'var(--color-secondary)';document.getElementById('tab3__button').style.background=
                         'var(--color-primary)';" type="button" class="btn tab__button">Mac OS</button>
                     </div>
-                    <div class="tabs__content">
+                    <div data-aos="fade-up" data-aos-duration="1000" class="tabs__content">
                         <div id="tab1__content">
                             <h2>Tabs with soft transitioning effect.</h2>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores distinctio sapiente quae impedit! Quae, voluptas. Est eos temporibus quisquam aut saepe suscipit, vitae, accusamus quaerat corrupti iusto fugit quidem recusandae, et porro in expedita facere!</p>
@@ -122,18 +123,20 @@
                             <a href="#" class="btn btn--primary dl-button">Download</a>
                         </div>
                     </div>
-                    <img src="images/image_right_u255.png" alt="" class="tab__image">
+                    <img data-aos="fade-left" data-aos-duration="1000" src="images/image_right_u255.png" alt="" class="tab__image">
                 </div>
             </section>
             <section class="block sub-list-block">
                 <div class="container grid grid--1x2 sub-list">
                     <div class="sub-list__content">
-                        <h2>Sub list section</h2>
-                        <img src="images/divider_orange_u7 copy 4.png" alt="">
-                        <div class="content__text">
-                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cupiditate repellat id saepe distinctio excepturi! Officiis quibusdam quaerat et eaque veritatis quasi amet distinctio!</p>
+                        <div data-aos="fade-left" data-aos-duration="1000">
+                            <h2>Sub list section</h2>
+                            <img src="images/divider_orange_u7 copy 4.png" alt="">
+                            <div class="content__text">
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cupiditate repellat id saepe distinctio excepturi! Officiis quibusdam quaerat et eaque veritatis quasi amet distinctio!</p>
+                            </div>
                         </div>
-                        <div class="media">
+                        <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300" class="media">
                              <div class="media__icon">
                                  <i class="fas fa-cloud-upload-alt"></i>
                              </div>
@@ -142,7 +145,7 @@
                                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur ratione commodi magnam maiores laboriosam dolor!</p>
                              </div>
                          </div>
-                         <div class="media">
+                         <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500" class="media">
                              <div class="media__icon">
                                  <i class="fas fa-cloud-download-alt"></i>
                              </div>
@@ -152,7 +155,7 @@
                              </div>
                          </div>
                     </div>
-                    <picture>
+                    <picture data-aos="fade-right" data-aos-duration="1000" data-aos-delay="800">
                         <source type="image/webp" src="images/image_left_sub_list_u260.webp">
                         <source type="image/png" src="images/image_left_sub_list_u260.png">
                         <img src="images/image_left_sub_list_u260.png" alt="" class="sub-list__image">
@@ -161,7 +164,7 @@
             </section>
             <section class="block sub-list-block">
                 <div class="container grid grid--1x2 sub-list">
-                    <div class="sub-list__content">
+                    <div data-aos="fade-right" data-aos-duration="1000" class="sub-list__content">
                         <h2>Standard Picture Section</h2>
                         <img src="images/divider_orange_u7 copy 4.png" alt="">
                         <div class="content__text">
@@ -169,7 +172,7 @@
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus nisi nihil accusamus.</p>
                         </div>
                     </div>
-                    <picture>
+                    <picture data-aos="fade-left" data-aos-duration="1000" data-aos-delay="800">
                         <source type="image/webp" src="images/image_right_standard_u262.webp">
                         <source type="image/png" src="images/image_right_standard_u262.png">
                         <img src="images/image_right_standard_u262.png" alt="" class="sub-list__image">
@@ -184,21 +187,21 @@
                         <p class="header__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
                     </div>
                     <div class="features grid grid--1x3">
-                        <div class="feature">
+                        <div data-aos="zoom-in-right" data-aos-duration="1000" class="feature">
                             <div class="feature__icon-container">
                                 <i class="far fa-lightbulb feature__icon"></i>
                             </div>
                             <h3 class="feature__heading">Thoughtful Design</h3>
                             <p class="feature__content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse repellendus velit dicta atque maxime sapiente aspernatur modi architecto reiciendis, aliquid nisi eveniet repudiandae est illum!</p>
                         </div>
-                        <div class="feature">
+                        <div data-aos="zoom-in-up" data-aos-duration="1000" class="feature">
                             <div class="feature__icon-container">
                                 <i style="position: relative; top: 1px;" class="far fa-keyboard feature__icon"></i>
                             </div>
                             <h3 class="feature__heading">Well Crafted</h3>
                             <p class="feature__content">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veritatis atque temporibus eligendi dolorum iste nesciunt tempore, saepe, consequatur vitae architecto necessitatibus, esse rerum? Sit, dolor!</p>
                         </div>
-                        <div class="feature">
+                        <div data-aos="zoom-in-left" data-aos-duration="1000" class="feature">
                             <div class="feature__icon-container">
                                 <i style="position: relative; top:2px; left: 1px;" class="fas fa-bolt feature__icon"></i>
                             </div>
@@ -216,7 +219,7 @@
                         <p class="header__text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                     </div>
                     <div class="plans grid grid--1x3">
-                        <div class="plan">
+                        <div data-aos="flip-left" data-aos-duration="1000" data-aos-delay="200" class="plan">
                             <header class="plan__header">
                                 <h3 class="plan__name">Basic</h3>
                                 <div class="plan__price"><span class="dollar-sign">$</span>0</div>
@@ -233,7 +236,7 @@
                                 </ul>
                             </div>
                         </div>
-                        <div class="plan plan--popular">
+                        <div data-aos="flip-down" data-aos-duration="1000" data-aos-delay="200" class="plan plan--popular">
                             <header class="plan__header">
                                 <h3 class="plan__name">Professional</h3>
                                 <div class="plan__price"><span class="dollar-sign">$</span>19</div>
@@ -250,7 +253,7 @@
                                 </ul>
                             </div>
                         </div>
-                        <div class="plan">
+                        <div data-aos="flip-right" data-aos-duration="1000" data-aos-delay="200" class="plan">
                             <header class="plan__header">
                                 <h3 class="plan__name">Enterprise</h3>
                                 <div class="plan__price"><span class="dollar-sign">$</span>70</div>
@@ -278,39 +281,39 @@
                         <p class="header__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
                     </div>
                     <div class="quotes grid grid--1x3">
-                        <div class="quote">
+                        <div data-aos="zoom-in-right" data-aos-duration="1000" class="quote">
                             <div class="quote__content">
                                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odio aperiam nihil, fugiat unde nobis id voluptatem iusto doloremque obcaecati qui!</p>
                             </div>
                             <div class="quote__author">
-                                <img src="images/avatar_2_u231.png" alt="profile picture">
+                                <img data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="800" src="images/avatar_2_u231.png" alt="profile picture">
                                 <div class="author__specs">
-                                    <h3 class="author__name">Jeremy H.</h3>
-                                    <p class="author__job">Manager</p>
+                                    <h3 data-aos="fade-left" data-aos-duration="1000" data-aos-delay="800" class="author__name">Jeremy H.</h3>
+                                    <p data-aos="fade-up" data-aos-duration="1000" data-aos-delay="800" class="author__job">Manager</p>
                                 </div>
                             </div>
                         </div>
-                        <div class="quote">
+                        <div data-aos="zoom-in-right" data-aos-duration="1000" data-aos-delay="250" class="quote">
                             <div class="quote__content">
                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam eligendi doloribus possimus aliquid delectus unde voluptates ratione porro repellendus perferendis!</p>
                             </div>
                             <div class="quote__author">
-                                <img src="images/avatar_2_u231.png" alt="profile picture">
+                                <img data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="1050" src="images/avatar_2_u231.png" alt="profile picture">
                                 <div class="author__specs">
-                                    <h3 class="author__name">John S.</h3>
-                                    <p class="author__job">Freelancer</p>
+                                    <h3 data-aos="fade-left" data-aos-duration="1000" data-aos-delay="1050" class="author__name">John S.</h3>
+                                    <p data-aos="fade-up" data-aos-duration="1000" data-aos-delay="1050" class="author__job">Freelancer</p>
                                 </div>
                             </div>
                         </div>
-                        <div class="quote">
+                        <div data-aos="zoom-in-right" data-aos-duration="1000" data-aos-delay="500" class="quote">
                             <div class="quote__content">
                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas, voluptatibus. Suscipit modi laudantium nemo deleniti molestiae vitae itaque temporibus nobis!</p>
                             </div>
                             <div class="quote__author">
-                                <img src="images/avatar_2_u231.png" alt="profile picture">
+                                <img data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="1300" src="images/avatar_2_u231.png" alt="profile picture">
                                 <div class="author__specs">
-                                    <h3 class="author__name">Susan W.</h3>
-                                    <p class="author__job">Photographer</p>
+                                    <h3 data-aos="fade-left" data-aos-duration="1000" data-aos-delay="1300" class="author__name">Susan W.</h3>
+                                    <p data-aos="fade-up" data-aos-duration="1000" data-aos-delay="1300" class="author__job">Photographer</p>
                                 </div>
                             </div>
                         </div>
@@ -336,11 +339,11 @@
                     </div>
                     <form id="contact__form" action="#" class="contact__form grid grid--1x2">
                         <div>
-                            <input type="text" name="name" placeholder="Name" class="input" maxlength="50" required>
-                            <input type="email" name="email" placeholder="Email" class="input" maxlength="100" required>
-                            <input type="text" name="subject" placeholder="Subject" class="input" maxlength="50">
+                            <input data-aos="fade-right" data-aos-duration="1000" type="text" name="name" placeholder="Name" class="input" maxlength="50" required>
+                            <input data-aos="fade-left" data-aos-duration="1000" data-aos-delay="0" type="email" name="email" placeholder="Email" class="input" maxlength="100" required>
+                            <input data-aos="fade-right" data-aos-duration="1000" data-aos-delay="0" type="text" name="subject" placeholder="Subject" class="input" maxlength="50">
                         </div>
-                        <textarea rows="4" name="message" placeholder="Message" class="input textarea" maxlength="1500" required></textarea>
+                        <textarea data-aos="fade-left" data-aos-duration="1000" rows="4" name="message" placeholder="Message" class="input textarea" maxlength="1500" required></textarea>
                     </form>
                     <button type="submit" form="contact__form" class="btn btn--primary send-message-btn">Send Message</button>
                 </div>
@@ -359,7 +362,11 @@
                 &copy; 2015 Axure Themes
             </p>
         </footer>
-           <script src="js/main.js"></script>
     </div>
+    <script src="js/main.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
 </body>
 </html>
