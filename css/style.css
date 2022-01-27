@@ -63,6 +63,8 @@ h2 {
   font-weight: 400;
   font-size: 3.5rem;
   text-transform: uppercase;
+  letter-spacing: 1px;
+  word-spacing: 2px;
 }
 
 h3 {
@@ -761,7 +763,7 @@ nav {
 /*Hero Block*/
 
 .hero {
-  background-image: url(/images/image.webp);
+  background-image: url("/images/image.webp"), url("/images/image.png");
   background-position: top;
   background-repeat: no-repeat;
   background-size: 100% 100%;
@@ -833,5 +835,38 @@ nav {
 
   .sub-list-block:nth-of-type(odd) .sub-list .sub-list__image {
     justify-self: start;
+  }
+}
+
+/*Benefit Block*/
+
+.benefit {
+  background: url("/images/u25_state0.webp"), url("/images/u25_state0.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center;
+}
+
+.benefit__header {
+  text-align: center;
+}
+
+.benefit__heading {
+  color: #fff;
+}
+
+.benefit__text {
+  font-family: "Raleway", sans-serif;
+  font-weight: 300;
+  color: #fff;
+  font-size: 2rem;
+  opacity: 0.8;
+  margin-top: 1rem;
+  margin-bottom: 4rem;
+}
+
+@media screen and (min-width: 1024px) {
+  .benefit__text {
+    font-size: 1.6rem;
   }
 }
