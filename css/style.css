@@ -15,6 +15,15 @@
   box-sizing: border-box;
 }
 
+input,
+textarea,
+button,
+select,
+a,
+.collapsible {
+  -webkit-tap-highlight-color: transparent;
+}
+
 a {
   text-decoration: none;
 }
@@ -137,12 +146,11 @@ h3 {
   overflow: hidden;
   color: #fff;
   padding: 0.8rem 2rem;
-  transition: all 0.5s;
 }
 
 .btn--outline:hover,
 .btn--outline:focus {
-  border-radius: 100%;
+  outline: 1px solid #fff;
 }
 
 .submit--btn {
