@@ -913,20 +913,3 @@ nav {
     font-size: 1.6rem;
   }
 }
-
-/*Loading Box*/
-
-#loading-box {
-  display: flex;
-  height: 100vh;
-  justify-content: center;
-  align-items: center;
-  text-transform: uppercase;
-  color: var(--color-primary);
-  font-size: 5rem;
-  font-weight: 700;
-}
-
-#body__content {
-  display: none;
-}
